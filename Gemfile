@@ -63,6 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
-#gem 'devise'
+gem 'devise'
 gem 'better_errors', group: :development
 gem 'binding_of_caller'
