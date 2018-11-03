@@ -2,12 +2,13 @@ class RockPaperScissorsController < ApplicationController
   def play
     @throw = current_user.throw
     @comp_throw = ['rock', 'paper', 'scissors'].sample
-    @wins = 0
+    @win = 0
+    @comp_win = 0
   end
   def start
     current_user.throw = nil
     current_user.save
-    redirect_back(fallback_location: rps_path)
+    redirect_to: rps_path
   end
   def rock
     current_user.throw = 'rock'
