@@ -1,0 +1,16 @@
+<h2>choose</h2>
+<h3><%= link_to "Start", start_path %></h3>
+<% if @throw == nil %>
+  <p><%= link_to "Rock", rock_path %></p>
+  <p><%= link_to "Paper", paper_path %></p>
+  <p><%= link_to "Scissors", scissors_path %></p>
+<% end %>
+<% if @throw != nil %>
+  <p>You played <%= @throw %></p>
+  <p>Computer played <%= @comp_throw %></p>
+
+<% end %>
+<% if @throw = 'rock' %>
+  <% @wins = 10 %>
+  <%= @wins %>
+<% end %>

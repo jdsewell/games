@@ -16,3 +16,17 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  @import 'font-awesome';
+
+.page {
+  margin-top: 60px;
+  background-color: black;
+  color: white;
+  padding: 2%;
+}
+.user-form {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  padding: 4%;
+  color: black;
+}
