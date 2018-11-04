@@ -18,20 +18,25 @@
  @import 'font-awesome';
 
 body {
-  background-color: black;
+  background-color: rgb(200,200,200);
 }
 .page {
-  margin-top: 60px;
-  background-color: grey;
-  color: white;
+  margin-top: 65px;
+  background-color: rgb(200,200,200);
+  color: black;
 }
 .game-feed {
   margin-left: 20%;
   margin-right: 20%;
 }
-.score {
-  background-color: white;
+.navbar {
+  background-color: rgb(200,100,100);
   color: black;
+}
+.navbar li {
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .user-form {
