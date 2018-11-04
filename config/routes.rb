@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+#TicTacToe
+  get 'ttt' => 'tic_tac_toe#play'
 #Rock Paper Scissors
   get 'rps' => 'rock_paper_scissors#play'
   get 'start' => 'rock_paper_scissors#start'
