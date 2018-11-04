@@ -1,9 +1,11 @@
 <div class="game-feed">
-<h2>choose</h2>
+
 <% if @throw != nil %>
-<h3><%= link_to "Play Again", start_path %></h3>
+  <h3><%= link_to "Play Again", start_path %></h3>
 <% end %>
+
 <% if @throw == nil %>
+  <h2>Choose</h2>
   <p><%= link_to "Rock", rock_path %></p>
   <p><%= link_to "Paper", paper_path %></p>
   <p><%= link_to "Scissors", scissors_path %></p>
@@ -11,27 +13,20 @@
 <% if @throw != nil %>
   <p>You played <%= @throw %></p>
   <p>Computer played <%= @comp_throw %></p>
+<% end %>
 
-<% end %>
 <% if @throw != nil %>
-<% if @throw == @comp_throw %>
-  <h3>It's a tie</h3>
-<% elsif @throw == 'rock' && @comp_throw == 'scissors' %>
-  <h3>You won!</h3>
-  <% @win += 1 %>
-<% elsif @throw == 'paper' && @comp_throw == 'rock' %>
-  <h3>You won!</h3>
-  <% @win += 1 %>
-<% elsif @throw == 'scissors' && @comp_throw == 'paper' %>
-  <h3>You won!</h3>
-  <% @win += 1 %>
-<% else %>
-  <h3>You lost</h3>
-  <% @comp_win += 1 %>
+  <% if @throw == @comp_throw %>
+    <h3>It's a tie</h3>
+  <% elsif @throw == 'rock' && @comp_throw == 'scissors' %>
+    <h3>You won!</h3>
+  <% elsif @throw == 'paper' && @comp_throw == 'rock' %>
+    <h3>You won!</h3>
+  <% elsif @throw == 'scissors' && @comp_throw == 'paper' %>
+    <h3>You won!</h3>
+  <% else %>
+    <h3>You lost</h3>
+  <% end %>
 <% end %>
-<% end %>
-<div class="score">
-<p>Your wins: <%= @win %></p>
-<p>Computer wins: <%= @comp_win %></p>
 </div>
 </div>
