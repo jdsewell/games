@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'ttt' => 'tic_tac_toe#play'
 #Rock Paper Scissors
   get 'rps' => 'rock_paper_scissors#play'
-  get 'start' => 'rock_paper_scissors#start'
+  get 'rps_result' => 'rock_paper_scissors#result'
   get 'rock' => 'rock_paper_scissors#rock'
   get 'paper' => 'rock_paper_scissors#paper'
   get 'scissors' => 'rock_paper_scissors#scissors'
