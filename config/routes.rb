@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
+  get 'posts' => 'posts#index'
+  get 'new_post' => 'posts#new'
+  resources :posts
 #TicTacToe
   get 'ttt' => 'tic_tac_toe#play'
 #Rock Paper Scissors

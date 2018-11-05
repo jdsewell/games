@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'New Post', new_post_path, remote: true %>
+
+<div id="post-form" style="display:none;"></div>
+
+<h2>Posts</h2>
+<ul>
+    <div id="posts">
+        <%= render @posts %>
+    </div>
+</ul>
