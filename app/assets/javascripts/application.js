@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
@@ -27,14 +28,14 @@
 //   }
 //   humanPlayed = !humanPlayed
 // });
-function loadPosts(){
-    $.getJSON("/posts.json", function(data){
-      var html = "";
-      $.each(data, function (index){
-	       // alert(data[index].content);
-	       html += "<b><i>" + data[index].content + "</i></b><br>";
-	       });
-	        // update our div
-	         $("#posts").html(html);
-	         });
-         }
+// function loadPosts(){
+//     $.getJSON("/posts.json", function(data){
+//       var html = "";
+//       $.each(data, function (index){
+// 	       // alert(data[index].content);
+// 	       html += "<b><i>" + data[index].content + "</i></b><br>";
+// 	       });
+// 	        // update our div
+// 	         $("#posts").html(html);
+// 	         });
+//          }

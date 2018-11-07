@@ -1,33 +1,19 @@
 class PostsController < ApplicationController
   before_action :all_posts, only: [:index, :create]
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy]
 
 
   # GET /posts/new
+  def update
+    @post.update(post_params)
+  end
   def new
     @post = Post.new
   end
 
-  # GET /posts/1/edit
-  def edit
-  end
-
-  # POST /posts
-  # POST /posts.json
   def create
+    #@post = Post.new(post_params)
     @post = Post.create(post_params)
-  end
-
-  # PATCH/PUT /posts/1
-  # PATCH/PUT /posts/1.json
-  def update
-    @post.update(post_params)
-  end
-
-  # DELETE /posts/1
-  # DELETE /posts/1.json
-  def destroy
-    @post.destroy
   end
 
   private
