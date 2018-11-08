@@ -7,6 +7,11 @@
     <h3><%= link_to "Tic Tac Toe", ttt_path %></h3>
   </div>
 </div>
-<div id="posts">
-  <a href="javascript:loadPosts();">This is where blog posts go</a>
+<center><h2>Posts <%= link_to 'New Post', new_post_path, remote: true, class: "btn btn-primary" %></h2></center>
+<div id="post-form" style="display:none;"></div>
+<ul>
+    <div id="posts">
+        <%= render @posts %>
+    </div>
+</ul>
 </div>

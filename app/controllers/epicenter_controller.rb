@@ -1,5 +1,6 @@
 class EpicenterController < ApplicationController
   def feed
+    @posts = Post.all
   end
 
   def show_user
