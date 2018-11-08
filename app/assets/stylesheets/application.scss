@@ -26,8 +26,9 @@ body {
   color: black;
 }
 .game-feed {
-  margin-left: 20%;
-  margin-right: 20%;
+  // margin-left: 20%;
+  // margin-right: 20%;
+  background-color: purple;
 }
 .navbar {
   background-color: rgb(200,100,100);
@@ -45,4 +46,7 @@ body {
   background-color: white;
   padding: 4%;
   color: black;
+}
+.container {
+  width: 100%;
 }
