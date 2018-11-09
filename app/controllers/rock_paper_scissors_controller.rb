@@ -1,16 +1,17 @@
 class RockPaperScissorsController < ApplicationController
   def play
-    current_user.throw = nil
-    current_user.save
+    # current_user.throw = nil
+    # current_user.save
     if current_user.throw != nil
       redirect_to rps_result_path
     end
+    @throw = current_user.throw
   end
-  # def start
-  #   current_user.throw = nil
-  #   current_user.save
-  #   redirect_to rps_path
-  # end
+  def restart
+    current_user.throw = nil
+    current_user.save
+    redirect_to rps_path
+  end
   def rock
     current_user.throw = 'rock'
     current_user.save

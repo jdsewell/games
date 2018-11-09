@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 #Rock Paper Scissors
   get 'rps' => 'rock_paper_scissors#play'
   get 'rps_result' => 'rock_paper_scissors#result'
+  get 'rps_restart' => 'rock_paper_scissors#restart'
   get 'rock' => 'rock_paper_scissors#rock'
   get 'paper' => 'rock_paper_scissors#paper'
   get 'scissors' => 'rock_paper_scissors#scissors'
