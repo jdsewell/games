@@ -26,14 +26,18 @@ body {
   color: black;
 }
 .game-feed {
-  // margin-left: 20%;
+  // margin-left: 20%;$red
   // margin-right: 20%;
   background-color: purple;
   padding: 2%;
   text-align: center;
+  border-radius: 20px;
 }
 .navbar {
-  background-color: rgb(200,100,100);
+  background-color: rgb(255,150,0);
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255,50,0);
+  border-bottom-width: 1px;
   color: black;
 }
 .navbar li {
