@@ -15,17 +15,17 @@ class RockPaperScissorsController < ApplicationController
   def rock
     current_user.throw = 'rock'
     current_user.save
-    # redirect_to rps_result_path
+    redirect_to rps_result_path
   end
   def paper
     current_user.throw = 'paper'
     current_user.save
-    # redirect_to rps_result_path
+    redirect_to rps_result_path
   end
   def scissors
     current_user.throw = 'scissors'
     current_user.save
-    # redirect_to rps_result_path
+    redirect_to rps_result_path
   end
   def result
     @throw = current_user.throw
