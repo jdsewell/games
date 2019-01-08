@@ -2,17 +2,7 @@
 <div class="jumbotron">
   <p>You played <%= @throw %></p>
   <p>Computer played <%= @comp_throw %></p>
-  <% if @throw == @comp_throw %>
-    <h3>It's a tie</h3>
-  <% elsif @throw == 'rock' && @comp_throw == 'scissors' %>
-    <h3>You won!</h3>
-  <% elsif @throw == 'paper' && @comp_throw == 'rock' %>
-    <h3>You won!</h3>
-  <% elsif @throw == 'scissors' && @comp_throw == 'paper' %>
-    <h3>You won!</h3>
-  <% else %>
-    <h3>You lost</h3>
-  <% end %>
+  <p><%= @result %></p>
   <%= link_to 'Play Again?', rps_restart_path, class: "btn btn-primary" %>
 </div>
 </div>

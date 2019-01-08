@@ -26,8 +26,8 @@ body {
   color: black;
 }
 .game-feed {
-  // margin-left: 20%;$red
-  // margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
   background-color: purple;
   padding: 2%;
   text-align: center;
@@ -55,4 +55,7 @@ body {
 }
 .container {
   width: 100%;
+}
+.jumbotron {
+  padding: 5%;
 }
